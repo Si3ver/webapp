@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算属性、方法、侦听器</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            template: "<div>{{ fullName }}</div>",
+            data: {
+                firstName: "william",
+                lastName: "joy",
+                age: 24,
+            },
+            computed: {
+                fullName: function(){
+                    console.log('compute once')
+                    return this.firstName + " " + this.lastName
+                }
+            },
+
+        })
+    </script>
+</body>
+</html>
