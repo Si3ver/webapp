@@ -50,8 +50,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/styles/varibles.styl'
-  @import '~@/assets/styles/mixins.styl'
+  @import '~styles/varibles.styl'
+  @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%

@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~@/assets/styles/mixins.styl'
+  @import '~styles/mixins.styl'
   .title
     line-height: .8rem
     background: #eee
