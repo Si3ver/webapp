@@ -39,7 +39,8 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/webapp/travelapp/dist/static/mock/index.json?city=' + this.city)
+      // axios.get('/webapp/travelapp/dist/static/mock/index.json?city=' + this.city)
+      axios.get('api/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
